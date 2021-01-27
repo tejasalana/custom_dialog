@@ -3,8 +3,8 @@ package com.example.customdialog;
 import android.content.Context;
 
 import androidx.test.core.app.ActivityScenario;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
-import androidx.test.runner.AndroidJUnit4;
 
 
 import org.junit.Test;
@@ -43,10 +43,10 @@ public class ExampleInstrumentedTest {
         onView(withText("Rename Token")).check(matches(isDisplayed()));
         onView(withText("Enter a unique name for your token")).check(matches(isDisplayed()));
         onView(withText("Save")).perform(click());
-        onView(withText("Cancel")).perform(click());
+        //onView(withText("Cancel")).perform(click());
 
         // make sure dialog is still visible (can't click ok without entering a name)
-        onView(withText("Test message")).check(matches(isDisplayed()));
+        onView(withText("Rename Token")).check(matches(isDisplayed()));
 
         // enter a name
         onView(withId(R.id.nameEditText)).perform(typeText(NAME));
