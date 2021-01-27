@@ -23,18 +23,6 @@ public class custom_dialog extends AlertDialog.Builder{
         this.setMessage(message);
         this.setCancelable(false);
         this.setView(dialogView);
-
     }
-    public void showDialog(custom_dialog dialog){
 
-        AlertDialog alertDialog = dialog.create();
-        alertDialog.show();
-
-        alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(context.getResources().getColor(R.color.light_blue_900));
-        alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextSize(17);
-        alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(context.getResources().getColor(R.color.grey_800));
-        alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextSize(17);
-        alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setAllCaps(false);
-        alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setAllCaps(false);
-     }
 }
