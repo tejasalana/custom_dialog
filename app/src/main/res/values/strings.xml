@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">custom dialog</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="editName">eng-access</string>
+    <string name="title">Rename Token</string>
+    <string name="description">Enter a unique name for your token</string>
+</resources>
